@@ -2,7 +2,7 @@ import React from 'react'
 import { Button,Nav,Navbar,Container,NavDropdown,Offcanvas } from 'react-bootstrap'
 export default function Mainnav():any {
   return (
-    <div>
+    <div className='mainnav'>
    {[ 'md' ].map((expand) => (
         <Navbar key={expand} bg="white" expand={expand} className="mb-3">
           <Container fluid>

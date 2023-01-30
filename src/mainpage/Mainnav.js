@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const react_bootstrap_1 = require("react-bootstrap");
 function Mainnav() {
-    return (react_1.default.createElement("div", null, ['md'].map((expand) => (react_1.default.createElement(react_bootstrap_1.Navbar, { key: expand, bg: "white", expand: expand, className: "mb-3" },
+    return (react_1.default.createElement("div", { className: 'mainnav' }, ['md'].map((expand) => (react_1.default.createElement(react_bootstrap_1.Navbar, { key: expand, bg: "white", expand: expand, className: "mb-3" },
         react_1.default.createElement(react_bootstrap_1.Container, { fluid: true },
             react_1.default.createElement(react_bootstrap_1.Navbar.Brand, { href: "#" }, "HealthHive"),
             react_1.default.createElement(react_bootstrap_1.Navbar.Toggle, { "aria-controls": `offcanvasNavbar-expand-${expand}` }),
